@@ -12,7 +12,7 @@ public class CongNhan extends CanBo {
         this.lever = lever;
     }
 
-    public CongNhan(String name, int birthday, String sex, String address, int lever) {
+    public CongNhan(String name, String birthday, String sex, String address, int lever) {
         super(name, birthday, sex, address);
         this.lever = lever;
     }

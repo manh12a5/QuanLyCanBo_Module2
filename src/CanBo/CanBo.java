@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class CanBo {
     private String name;
-    private int birthday;
+    private String birthday;
     private String sex;
     private String address;
 
     public CanBo() {
     }
 
-    public CanBo(String name, int birthday, String sex, String address) {
+    public CanBo(String name, String birthday, String sex, String address) {
         this.name = name;
         this.birthday = birthday;
         this.sex = sex;
@@ -26,11 +26,11 @@ public class CanBo {
         this.name = name;
     }
 
-    public int getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(int birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
@@ -60,9 +60,13 @@ public class CanBo {
         Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Nhập tên: ");
-        name = scanner.nextLine();
-        System.out.println("Nhập tuổi: ");
-        birthday = Integer.parseInt(scanner.nextLine());
+        name = scanner1.nextLine();
+        System.out.println("Nhập ngày sinh (dd/MM/yyyy): ");
+        birthday = scanner.nextLine();
+        while (birthday.length() < 8) {
+            System.out.println("Nhập ngày sinh (dd/MM/yyyy): ");
+            birthday = scanner.nextLine();
+        }
         while (true) {
             System.out.print("Nhập giới tính (Nam/Nữ): ");
             sex = scanner1.nextLine();

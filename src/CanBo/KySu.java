@@ -12,7 +12,7 @@ public class KySu extends CanBo {
         trainingIndustry = trainingIndustry;
     }
 
-    public KySu(String name, int birthday, String sex, String address, String trainingIndustry) {
+    public KySu(String name, String birthday, String sex, String address, String trainingIndustry) {
         super(name, birthday, sex, address);
         trainingIndustry = trainingIndustry;
     }

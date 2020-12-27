@@ -12,7 +12,7 @@ public class NhanVien extends CanBo{
         this.job = job;
     }
 
-    public NhanVien(String name, int birthday, String sex, String address, String job) {
+    public NhanVien(String name, String birthday, String sex, String address, String job) {
         super(name, birthday, sex, address);
         this.job = job;
     }
